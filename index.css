@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body {
+  background-color: #fffe65;
+  font-family: "Programme";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+#top-text {
+  position: relative;
+  left: 30px;
+  top: 10px;
+}
+
+ul.proj-list {
+  list-style-type: "- ";
+}
+ul.versions {
+  list-style-type: "# ";
+}
+ul.categories {
+  list-style-type: "» ";
+}
+ul.featurs {
+  list-style-type: circle;
+}
+
+.done {
+  color: #1cc674;
+}
+
+.in-progress {
+  color: #f65753;
+}
+
+.href-effect {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #2f59c2;
+  font-size: 20px;
+}
+.href-effect::after {
+  content: "";
+  background: rgba(47, 89, 194, 0.25);
+  position: absolute;
+  left: 12px;
+  bottom: -6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: -1;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+.href-effect:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */
