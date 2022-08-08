@@ -1,5 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Programme";
+  src: url("/programme_normal.woff2") format("woff2");
+}
+html,
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #fffe65;
   font-family: "Programme";
   -moz-user-select: none;
